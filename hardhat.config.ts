@@ -40,12 +40,12 @@ const config: HardhatUserConfig = {
       accounts,
       forking: {
         url: ARCHIVE_URL, // https://eth-rinkeby.alchemyapi.io/v2/SECRET`,
-        blockNumber: 10310810,
+        blockNumber: 10417330,
       },
     },
   },
   mocha: {
-    timeout: 300 * 1e3,
+    timeout: 300 * 1e9,
   }
 };
 
