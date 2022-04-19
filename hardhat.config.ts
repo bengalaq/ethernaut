@@ -40,7 +40,7 @@ const config: HardhatUserConfig = {
       accounts,
       forking: {
         url: ARCHIVE_URL, // https://eth-rinkeby.alchemyapi.io/v2/SECRET`,
-        blockNumber: 10500722,
+        blockNumber: 10532034,
       },
     },
   },
