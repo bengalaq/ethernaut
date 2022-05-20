@@ -24,11 +24,12 @@ const accounts = {
 const config: HardhatUserConfig = {
   solidity: {
     compilers: [
-      // old ethernaut compilers
-      { version: "0.5.0" },
+      { version: "0.8.4" },
       { version: "0.6.0" },
       { version: "0.7.3" },
-      { version: "0.8.0" }
+      { version: "0.7.0" },
+      { version: "0.8.0" },
+      { version: "0.5.0" }
     ],
   },
   networks: {
@@ -40,7 +41,7 @@ const config: HardhatUserConfig = {
       accounts,
       forking: {
         url: ARCHIVE_URL, // https://eth-rinkeby.alchemyapi.io/v2/SECRET`,
-        blockNumber: 10532034,
+        blockNumber: 10698573,
       },
     },
   },
