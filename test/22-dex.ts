@@ -121,6 +121,3 @@ describe("Dex challenge", async()=> {
 after(async () => {
   expect(await submitLevel(challenge.address), "DESAFÍO INCOMPLETO").to.be.true;
 });   
-
-// Notas:
-// https://codeforgeek.com/assert-vs-require-in-solidity/#assert-vs-require-in-solidity
