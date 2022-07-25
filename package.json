@@ -26,6 +26,7 @@
   "dependencies": {
     "@openzeppelin/contracts": "^3.4.2",
     "dotenv": "^10.0.0",
-    "eth-revert-reason": "^1.0.3"
+    "eth-revert-reason": "^1.0.3",
+    "latest": "^0.2.0"
   }
 }
