@@ -101,4 +101,6 @@ Al tener nuestros primeros roces con proxies, podríamos confundirnos y pensar "
 Entonces... ¿Cómo hacemos para cambiar el upgrader? Bueno, si bien la idea del proxy es interactuar con la implementación a través de él, también podríamos saltearlo y hablar directo con Engine, ¿no?
 Si entonces invocaramos directamente al método initialize() de Engine (el cual se encuentra con initialized=false dentro de su storage --> que no es el del proxy), podríamos cambiar el upgrader y después decir lo que todes queremos: "Voltorb yo te elijo!".
 
+
+RECORDATORIO: ES POSIBLE QUE NO FUNCIONE DENTRO DE ESTE ENTORNO. CREAR UN PROYECTO NUEVO HARDHAT Y PROBAR ALLÍ CON LOS CONTRATOS DE OPENZEPELLIN ACTUALIZADOS PARA LA VERSIÓN CORRESPONDIENTE.
 */
